@@ -14,7 +14,7 @@ const login = async (event) => {
       });
 // If the response is ok, redirect to the dashboard
       if (response.ok) {
-          document.location.replace("/dashboard");
+          document.location.replace("./dashboard");
       } else {
           alert(name +" could not log in");
       }

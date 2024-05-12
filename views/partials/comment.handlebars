@@ -1,7 +1,7 @@
-<div class="card w-100 my-2"> // Create a card for each comment
-    <div class="card-title d-flex justify-content-between px-2"> // Create a card title
-        <h6><em>{{user.name}} commented</h6> // Display the user's name
-        <h6 class="text-warning">{{format_datetime date_created}}</h6></em> // Display the date and time
+<div class="card w-100 my-2">
+    <div class="card-title d-flex justify-content-between px-2">
+        <h6><em>{{user.name}} commented</h6>
+        <h6 class="text-warning">{{format_datetime date_created}}</h6></em>
     </div>
-    <div class="card-body">{{content}}</div> // Display the comment content
+    <div class="card-body">{{content}}</div>
 </div>

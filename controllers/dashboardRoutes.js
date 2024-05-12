@@ -77,15 +77,15 @@ router.delete("/post/:id",isAuth, async (req, res) => {
 
 // get existing post for edit by id
 router.get("/post/:id",isAuth, async (req, res) => {
-    try { // find post by id
+    try {
         const postData = await Post.findOne({
             where: { id: req.params.id },
             attributes: ["title", "content"]
         });
-        if (postData) { // if post is found
+        if (postData) {
             const post = postData.get({ plain: true });
             res.render("editpost", { post, newPost: false, loggedIn: req.session.loggedIn });
-        } else { // if post is not found
+        } else {
             res.status(404).json({ message: "No post found with this id" });
         }
     } catch (err) {
