@@ -3,6 +3,7 @@ const loginBtn = document.querySelector(".login");
 const signupBtn = document.querySelector(".signup");
 const createpostBtn = document.querySelector(".createpost");
 
+// logout function
 const logout = async (event) => {
     event.preventDefault();
     const response = await fetch("/api/users/logout", {
@@ -12,16 +13,19 @@ const logout = async (event) => {
     if (response.ok) document.location.replace("/");
   };
 
+  // login function
   const login = async (event) => {
     event.preventDefault();
     document.location.replace("/login")
   };
 
+  // createpost function
   const createpost = async (event) => {
     event.preventDefault();
     document.location.replace("/api/posts")
   };
   
+  // event listeners
   if (logoutBtn) {
     logoutBtn.addEventListener("click", logout);
   }

@@ -1,0 +1,24 @@
+<div class="card col-11 m-4 p-1"> // Create a card for the comments
+    <div class="card-title d-flex justify-content-between p-2 h4"> // Create a card title
+        <p class="h2 text-dark">{{post.title}}</p> // Display the post title
+        <p class="h6 text-warning">(posted by {{post.user.name}} on {{format_datetime post.date_created}})</p> // Display the user's name and the date and time
+    </div>
+    <div class="card-body">{{post.content}}</div> // Display the post content
+</div>
+
+<div class="card col-11 m-4 p-1"> // Create a card for the comments
+    <div class="card-title d-flex justify-content-between p-2 h4"> //   
+        <p class="h2 text-warning">Comments</p> // Display the comments title
+    </div>
+
+    {{#each post.comments as |comment|}} // loops through each comment
+    {{> comment}} // includes the comment partial // a partial is a reusable template
+    {{/each}} // End the loop
+
+    <div class=""> // Create a form for adding comments
+        <textarea class="w-100 mb-5" name="comment" id="comment" cols="30" rows="5"></textarea> // Add a text area for the comment
+        <button class="btn btn-warning me-2" id="postComment">Save Comment</button> // Add a button to save the comment
+    </div>
+</div>
+
+<script src="..public\js\comment.js"></script> // Include the comment.js file
