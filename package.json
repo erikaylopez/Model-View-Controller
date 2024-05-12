@@ -1,4 +1,8 @@
 {
+  "name": "model-view-controller",
+  "version": "1.0.0",
+  "description": "Github\r Email",
+  "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "connect-session-sequelize": "^7.1.7",
@@ -8,5 +12,12 @@
     "express-session": "^1.18.0",
     "pg": "^8.11.5",
     "sequelize": "^6.37.3"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "author": "Erika Lopez",
+  "license": "ISC"
 }

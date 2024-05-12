@@ -1,0 +1,12 @@
+[
+    {
+        "title": "hello world",
+        "content": "this is a test",
+        "user_id": 1
+    },
+    {
+        "title": "javascript is awesome",
+        "content": "this is a test!!!!!!!!!!!!!!!!",
+        "user_id": 2
+    }
+]
