@@ -51,7 +51,7 @@ const createPostHandler = async (event) => {
     if (title.length > 0 && content.length > 0) {
 
 // If the title and content fields aren't empty, post the post to the dashboard
-        const response = await fetch("/dashboard/post", {
+        const response = await fetch("/api/posts", {
             method: "POST",
             body: JSON.stringify({ title, content }),
             headers: { "Content-Type": "application/json" },

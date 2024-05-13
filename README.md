@@ -17,9 +17,11 @@ To run this application, open the server.js file in the root directory. Npm i in
 # Questions
 
 [Github](https://github.com/erikaylopez)
+
 [Email](mailto:eylopez8686@gmail.com)
 
 # License
 Licensed under the MIT license. Copyright @ MIT. All rights reserved.
 
 # Screenshot
+![Screenshot](Screenshot_13-5-2024_16043_localhost.jpeg)
